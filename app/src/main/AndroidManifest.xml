@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lappli">
+    <!-- AJOUT DES PERMISSIONS DE L'APPLICATION -->
+    <!-- Ici l'accès à internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lappli">
+        <activity android:name=".onSave"/>
+        <!-- WIDGETS -->
+        <activity android:name=".view.ListView_1_item" />
+        <activity android:name=".widgets.Widgets_Spinner" />
+        <!-- MEDIAS -->
+        <activity android:name=".media.Audio_Control" />
+        <activity android:name=".media.Video_Control" />
+        <activity android:name=".media.Video_Auto" />
+        <activity android:name=".media.Audio_Auto" />
+        <!-- LAYOUT FROM XML -->
+        <activity android:name=".layout.LayoutLinear_Mail" />
+        <activity android:name=".layout.LayoutFrame" />
+        <activity android:name=".layout.LayoutRelative" />
+        <activity android:name=".layout.LayoutTable" />
+        <activity android:name=".layout.LayoutGrid" />
+        <activity android:name=".layout.LayoutConstraint" />
+        <!-- ANIMATION -->
+        <activity android:name=".animations.AnimationLoading" />
+        <activity android:name=".animations.AnimationSimpson" />
+        <!-- LLAYOUT FROM JAVA -->
+        <activity android:name=".layoutFromJava.Grid2FromJava"/>
+        <activity android:name=".layoutFromJava.GridFromJava"/>
+        <activity android:name=".layoutFromJava.RelativeFromJava"/>
+        <activity android:name=".layoutFromJava.LinearFromJava"/>
+        <!-- Main -->
+        <activity android:name=".Accueil">
+            <!--  Partie a copier si et à placer entre les balises <activity> et </activity> de l'activité
+                          que vous voulez faire démarrer en premier -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- Fin de la partie à copier -->
+        </activity>
+    </application>
+
+</manifest>

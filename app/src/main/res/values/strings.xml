@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">The app</string>
+    <!--Les noms des variables correspondant à des objet d'Android Studio j'ai ajouté un _ !!
+      De plus pour respecter, ce qui n'est pas obligatoire, la convention de nommage des éléments
+      situés dans le dossier res, je suis resté sur a-z, 0-9 et _-->
+    <string name="layouts_xml">Layouts from xml</string>
+    <string name="linear_layout" translatable="false">Linear Layout</string>
+    <string name="frame_layout" translatable="false">Frame Layout</string>
+    <string name="grid_layout" translatable="false">Grid Layout</string>
+    <string name="constraint_layout" translatable="false">Constraint Layout</string>
+    <string name="relative_layout" translatable="false">Relative Layout</string>
+    <string name="table_layout" translatable="false">Table Layout</string>
+
+    <string name="animations" translatable="false">Animations</string>
+    <string name="loading" translatable="false">Loading</string>
+    <string name="simpson" translatable="false">Simpson</string>
+
+    <string name="les_medias">The media</string>
+    <string name="audio_auto" translatable="false">Audio Auto</string>
+    <string name="audio_control" translatable="false">Audio Control</string>
+    <string name="video_auto" translatable="false">Video Auto</string>
+    <string name="video_control" translatable="false">Video Control</string>
+
+    <string name="les_widgets">Widgets and more</string>
+    <string name="le_spinner">Spinner</string>
+    <string name="valider">Validate</string>
+    <string name="row" translatable="false">row</string>
+
+    <string name="bonjour">Default Hello</string>
+    <string name="java_linear_layout" translatable="false">Linear Layout</string>
+    <string name="java_grid_2" translatable="false">Grid 2</string>
+    <string name="java_grid" translatable="false">Grid</string>
+    <string name="layout_from_java">Java Layouts</string>
+    <string name="java_relative">relative</string>
+
+</resources>

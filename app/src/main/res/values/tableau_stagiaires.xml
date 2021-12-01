@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="liste_stagiaires_array">
+        <item>Paul</item>
+        <item>Malika</item>
+        <item>Suzanne</item>
+        <item>Yann</item>
+        <item>Charles</item>
+        <item>Achille</item>
+        <item>Tarak</item>
+        <item>Patrice</item>
+        <item>Sadrack</item>
+        <item>Dominique</item>
+        <item>Michael</item>
+        <item>Rattelise</item>
+        <item>François</item>
+        <item>Luc</item>
+    </string-array>
+</resources>

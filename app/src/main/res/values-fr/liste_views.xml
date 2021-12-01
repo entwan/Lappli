@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="liste_views_array">
+        <item>Spinner des différents listView</item>
+        <item>ListView simple 1 Item</item>
+        <item>ListView simple 2 Item</item>
+        <item>RecycleView</item>
+    </string-array>
+</resources>
+

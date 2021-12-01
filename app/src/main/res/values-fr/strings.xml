@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">L\'appli</string>
+    <string name="layouts_xml">Layouts XML</string>
+    <string name="les_medias">Les médias</string>
+    <string name="les_widgets">widgets et plus</string>
+    <string name="le_spinner">Le spinner</string>
+    <string name="valider">Valider</string>
+    <string name="bonjour">Defaut Bonjour</string>
+    <string name="layout_from_java">Les Layouts Java</string>
+</resources>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Accueil">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_LayoutsXml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/layouts_xml"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+            <LinearLayout
+                android:id="@+id/ll_LayoutsXml"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_LayoutLinear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_goutte_d_eau"
+                    android:backgroundTint="#3F51B5"
+                    android:onClick="btn_Clic"
+                    android:tag="layout.LayoutLinear_Mail"
+                    android:text="@string/java_linear_layout"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/btn_layout" />
+
+                <Button
+                    android:id="@+id/btn_LayoutFrame"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:onClick="btn_Clic"
+                    android:tag="layout.LayoutFrame"
+                    android:text="@string/frame_layout"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/btn_layout" />
+
+                <Button
+                    android:id="@+id/btn_LayoutRelative"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:onClick="btn_Clic"
+                    android:tag="layout.LayoutRelative"
+                    android:text="@string/relative_layout"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/btn_layout" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_LaytousXml2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_LayoutTable"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:onClick="btn_Clic"
+                    android:tag="layout.LayoutTable"
+                    android:text="@string/table_layout"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/btn_layout" />
+
+                <Button
+                    android:id="@+id/btn_LayoutConstraint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:onClick="btn_Clic"
+                    android:tag="layout.LayoutConstraint"
+                    android:text="@string/constraint_layout"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/btn_layout" />
+
+                <Button
+                    android:id="@+id/btn_LayoutGrid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:onClick="btn_Clic"
+                    android:tag="layout.LayoutGrid"
+                    android:text="@string/grid_layout"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/btn_layout" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_LayoutsJava"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/layout_from_java"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+            <LinearLayout
+                android:id="@+id/ll_LayoutsJava"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_LayoutJavaLinear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:onClick="btn_Clic"
+                    android:tag="layoutFromJava.LinearFromJava"
+                    android:text="@string/java_linear_layout"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/btn_layout" />
+
+                <Button
+                    android:id="@+id/btn_LayoutJavaRelative"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:onClick="btn_Clic"
+                    android:tag="layoutFromJava.RelativeFromJava"
+                    android:text="@string/java_relative"
+                    android:textSize="11sp"
+                    app:backgroundTint="@color/btn_layout" />
+
+                <Button
+                    android:id="@+id/btn_LayoutJavaGrid"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:onClick="btn_Clic"
+                    android:tag="layoutFromJava.GridFromJava"
+                    android:text="@string/java_grid"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/btn_layout" />
+
+                <Button
+                    android:id="@+id/btn_LayoutJavaGrid2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:onClick="btn_Clic"
+                    android:tag="layoutFromJava.Grid2FromJava"
+                    android:text="@string/java_grid_2"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/btn_layout" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Animations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/animations"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+            <LinearLayout
+                android:id="@+id/ll_Animations"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_AnimationLoading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:onClick="btn_Clic"
+                    android:tag="animations.AnimationLoading"
+                    android:text="@string/loading"
+                    app:backgroundTint="@color/btn_animations" />
+
+                <Button
+                    android:id="@+id/button_AnimationSimpson"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:onClick="btn_Clic"
+                    android:tag="animations.AnimationSimpson"
+                    android:text="@string/simpson"
+                    app:backgroundTint="@color/btn_animations" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Media"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/les_medias"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+            <LinearLayout
+                android:id="@+id/ll_Media"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_MediaAudio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_AudioAuto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:onClick="btn_Clic"
+                        android:tag="media.Audio_Auto"
+                        android:text="@string/audio_auto" />
+
+                    <Button
+                        android:id="@+id/btn_AudioControl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:onClick="btn_Clic"
+                        android:tag="media.Audio_Control"
+                        android:text="@string/audio_control" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_MediaVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_VideoAuto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:onClick="btn_Clic"
+                        android:tag="media.Video_Auto"
+                        android:text="@string/video_auto" />
+
+                    <Button
+                        android:id="@+id/btn_Video_Control"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:onClick="btn_Clic"
+                        android:tag="media.Video_Control"
+                        android:text="@string/video_control" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_Liste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/les_widgets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+            <Button
+                android:id="@+id/button_Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btn_Clic"
+                android:tag="widgets.Widgets_Spinner"
+                android:text="@string/le_spinner" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_GMdb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="autreApp"
+                android:text="Lancer l'App GMdb" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btn_Clic"
+                android:tag="onSave"
+                android:text="Button" />
+
+            <!-- android:entries="@array/liste_views_array"/> -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

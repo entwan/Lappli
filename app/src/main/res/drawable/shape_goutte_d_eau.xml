@@ -1,0 +1,43 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Pour donner une forme spéciale on joue sur le radius du coin -->
+    <corners
+        android:bottomRightRadius="10dp"
+        android:radius="40dp" />
+
+    <!-- Le gradient est compsé de 3 couleurs startColor, centralColor et endColor
+         centerX et centerY servent à positionner la couleur centrale
+         gradientRadius donne l'effet arrondi au gradient -->
+    <gradient
+        android:angle="45"
+        android:startColor="#0189ff"
+        android:centerColor="@color/purple_700"
+        android:centerX="0.5"
+        android:centerY="0.2"
+        android:endColor="#01f1fa"
+        android:gradientRadius="15dp"
+        android:type="linear" />
+
+    <!-- Si vous ne voulez seulement une couleur unie retirer le gradient et décommenter
+     la suite -->
+    <!--<solid android:color="#FFFFFF" />-->
+
+    <size
+        android:width="82dp"
+        android:height="82dp" />
+
+    <!-- Utiliser android:dashWidth="2dp" et android:dashGap="2dp"
+    pour ajouter des tirets(dash) à votre contour (stroke) -->
+    <stroke
+        android:width="2dp"
+        android:color="#FFFFFF" />
+
+    <!--Pour ajouter un padding-->
+    <!-- <padding
+         android:left="10dp"
+         android:top="20dp"
+         android:right="40dp"
+         android:bottom="8dp" />-->
+
+</shape>
