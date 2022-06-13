@@ -5,6 +5,7 @@
     <!-- Ici l'accès à internet -->
     <uses-permission android:name="android.permission.INTERNET" />
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lappli">
-        <activity android:name=".onSave"/>
+
         <!-- WIDGETS -->
         <activity android:name=".view.ListView_1_item" />
         <activity android:name=".widgets.Widgets_Spinner" />
@@ -37,9 +38,11 @@
         <activity android:name=".layoutFromJava.RelativeFromJava"/>
         <activity android:name=".layoutFromJava.LinearFromJava"/>
         <!-- Main -->
-        <activity android:name=".Accueil">
+        <activity android:name=".Accueil"
+            android:exported="true">
             <!--  Partie a copier si et à placer entre les balises <activity> et </activity> de l'activité
                           que vous voulez faire démarrer en premier -->
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -48,5 +51,10 @@
             <!-- Fin de la partie à copier -->
         </activity>
     </application>
+
+    <queries>
+        <package android:name="com.dam.musicplayer" />
+        <package android:name="com.dam.listes" />
+    </queries>
 
 </manifest>

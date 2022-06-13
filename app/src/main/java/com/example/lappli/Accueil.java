@@ -63,14 +63,21 @@ public class Accueil extends AppCompatActivity  {
     public void autreApp(View view){
         Button bouton_presse = (Button) view;
         Intent i;
+
         try {
-            i = getPackageManager().getLaunchIntentForPackage("com.example.gmdb");
+            PackageManager packageManager = getPackageManager();
+            i = packageManager.getLaunchIntentForPackage("com.dam.listes");
+            Log.i(TAG, "autreApp: i : " + i);
+            //i = getPackageManager().getLaunchIntentForPackage("com.dam.musicplayer");
+
             if (i == null)
                 throw new PackageManager.NameNotFoundException();
+
             i.addCategory(Intent.CATEGORY_LAUNCHER);
             startActivity(i);
         } catch (PackageManager.NameNotFoundException e) {
             // affiche que l'appli n'est pas présente sur le tel
+            Log.i(TAG, "autreApp: " + e.toString());
         }
     }
 
